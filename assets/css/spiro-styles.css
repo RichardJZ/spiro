@@ -74,10 +74,7 @@ h2 a{
 
 }
 
-nav#menu{
-  margin:0 auto;
 
-}
 
 .container{
 max-width:1300px;
@@ -225,6 +222,10 @@ header nav li {
   background-position: center;
 
    }
+
+ .hide{display:none;}
+
+
 
 .hero h1 {
   font: bold 60px "Open Sans", sans-serif;
@@ -414,7 +415,7 @@ background-color:transparent;
   width:100%;
  }
 
- .hide{display:none;}
+
 
 section p{
   margin:20px 15px;
@@ -814,6 +815,7 @@ nav li {
   
 }
 
+@media (min-width: 764px) {
 #menu li a {
   display:block;
   min-width:140px;
@@ -831,8 +833,16 @@ nav li {
 
 }
 
+nav#menu{
+  margin:0 auto;
+  
+
+}
+
 #menu li:hover a{
   background:rgba(63, 81, 181, 0.8);
+
+}
 
 }
 
@@ -856,19 +866,13 @@ list-style:none;
 
 /* mobile menu */
 
-#js--menu{
-  display:none;
-
-}
 
 .mobile-menu{
 display:none;
 
 }
 
-.visible{
-  display:block;
-}
+
 
 
 
@@ -914,8 +918,23 @@ position:absolute;
   }
  */
 
-#js--menu{
+  .visible{
   display:block;
+}
+
+.js--menu{
+
+  width:100vw;
+  color:#fff;
+  text-align:center;
+  background-color:var(--color-primary-blue-3);
+  font-size:1.25rem;
+  height:2.8rem;
+  padding:10px;
+}
+
+.js--menuX{
+
   width:100vw;
   color:#fff;
   text-align:center;
@@ -942,10 +961,7 @@ border:1px solid white;
 
 }
 
-#menu li a {
-background:var(--color-primary-blue-2);
-margin-bottom:0;   
-}
+
 .mobile-menu li a{
   
   
@@ -966,12 +982,6 @@ margin-bottom:0;
   #menu{
     
       display:none;
-    
-   
-    
-    
-
-
   }
 
 

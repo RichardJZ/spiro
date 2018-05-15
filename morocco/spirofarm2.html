@@ -12,31 +12,62 @@
   <link rel="stylesheet" href="../assets/css/spiro-styles.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
+/*
 $(document).ready(function(){
-   /* $(".btn1").click(function(){
+    $(".btn1").click(function(){
         $("p").slideUp();
          $(".btn2").addClass("visible")
         $(".btn1").removeClass("visible")
     });
-
-    */
-    $("#js--menu").click(function(){
-      $('.menu-bar-text').fadeOut(300, function() {
-    $(this).html('X').fadeIn(300);
-});
-       $(".mobile-menu").slideDown(500);
-      $(".mobile-menu").addClass("visible");
-      
-
-
-       
-/*
+    $(".btn2").click(function(){
+      $("p").addClass("visible")
+        $("p").slideDown();
+        
        $(".btn1").addClass("visible")
        $(".btn2").removeClass("visible")
         $(".btn2").addClass("hide")
-        */
+        
     });
 });
+
+*/
+$(document).ready(function(){
+    $(".js--menuX").click(function(){
+    /*  $('.menu-bar-text').fadeOut(300, function() {
+    $(this).html('Menu').fadeIn(300);
+});
+*/
+
+       $(".mobile-menu").slideUp(500);
+      $(".mobile-menu").removeClass("visible");
+    
+ $(".js--menuX").removeClass("visible");
+
+     
+      $(".js--menu").addClass("visible");
+
+  });
+
+      $(".js--menu").click(function(){
+      
+      
+       $(".mobile-menu").slideDown(500);
+      $(".mobile-menu").addClass("visible");
+     
+
+$(".js--menuX").addClass("visible");
+    $(".js--menu").removeClass("visible");
+
+      $(".js--menu").addClass("hide");
+      
+});   
+    
+       
+
+
+      });
+
+
 </script>
 </head>
 <body>
@@ -44,10 +75,16 @@ $(document).ready(function(){
   <header>
     <!--<h2 class="wrapper-title"><a href="#">Places to Be</a></h2>
 -->
-    <div class="bar" id="js--menu" onclick="toggleMenu()">
+    <div class="bar js--menu">
       <div class="menu-bar-text">
 
     MENU</div>
+  </div>
+
+  <div class="bar js--menuX hide">
+      <div class="menu-bar-text">
+
+    X</div>
   </div>
      
 <nav class="mobile-menu">
@@ -59,6 +96,7 @@ $(document).ready(function(){
         <li><a href="#">Contact</a></li>
     </nav>
 
+
       <nav id="menu">
         <li class="menu-item"><a href="#">Home</a></li>
         <li><a href="#">Destinations</a></li>
@@ -67,6 +105,7 @@ $(document).ready(function(){
         <li><a href="#">Contact</a></li>
     </nav>
   </header>
+
 
   <section class="hero">
     <div class="background-image" style="background-image: url(../assets/img/nature-palace-land-md.jpg);"></div>
