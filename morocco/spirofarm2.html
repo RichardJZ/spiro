@@ -33,10 +33,13 @@ $(document).ready(function(){
 */
 $(document).ready(function(){
     $(".js--menuX").click(function(){
-    /*  $('.menu-bar-text').fadeOut(300, function() {
+    
+
+
+    $('.menu-bar-text').fadeOut(300, function() {
     $(this).html('Menu').fadeIn(300);
 });
-*/
+
 
        $(".mobile-menu").slideUp(500);
       $(".mobile-menu").removeClass("visible");
@@ -56,6 +59,12 @@ $(document).ready(function(){
      
 
 $(".js--menuX").addClass("visible");
+
+    $('.menu-bar-text').fadeOut(300, function() {
+    $(this).html('X').fadeIn(300);
+});
+
+
     $(".js--menu").removeClass("visible");
 
       $(".js--menu").addClass("hide");
@@ -78,7 +87,7 @@ $(".js--menuX").addClass("visible");
     <div class="bar js--menu">
       <div class="menu-bar-text">
 
-    MENU</div>
+    Menu</div>
   </div>
 
   <div class="bar js--menuX hide">
